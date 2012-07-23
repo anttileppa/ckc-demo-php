@@ -75,25 +75,4 @@ if ($valid) {
 } else {
 	header('HTTP', true, 403);
 }
-
-/**
-
-
-header('Content-Type: text/event-stream');
-header('Cache-Control: no-cache');
-
-if(isset($_SESSION['views'])) {
-$_SESSION['views']= $_SESSION['views'] + 1;
-} else {
-$_SESSION['views'] = 1;
-}
-
-$new_data = $_SESSION['views'];
-echo "data: Views: $new_data";
-
-echo PHP_EOL;
-ob_flush();
-flush();
-**/
-
 ?>
