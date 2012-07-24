@@ -1,5 +1,5 @@
 <?php 
-  require_once "ckc/connectors/demo/db.php";
+  require_once dirname( __FILE__ ) . "/ckc/connectors/demo/db.php";
 
   $documentId = $_GET['documentId']; 
   if (empty($documentId)) {
